@@ -54,5 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root '/index'
+  root 'schools#index'
+
+  get "schools" => "schools#index"
 end
