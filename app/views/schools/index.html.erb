@@ -6,7 +6,8 @@
 		<% @schools.each do |school|%>
 			<li><h4>School:</h4><%= school.name %>, <%= school.grade %> grade</li>
 			
-			<li>Bus Info: <%= school.buses.each do |bus| bus.bus_number end%></li>
+			<li><h4>Bus Info:</h4> <% school.buses.each do |bus|%><%= bus.company %> <%= bus.bus_number %>, 
+			<% end %></li>
 		<% end %>
 	</ul>
 </div>
