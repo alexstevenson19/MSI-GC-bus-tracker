@@ -4,10 +4,13 @@
 <div>
 	<ul>
 		<% @schools.each do |school|%>
-			<li><h4>School:</h4><%= school.name %>, <%= school.grade %> grade</li>
+			<li><h4>School:</h4><%= school.name %>, <%= school.grade %> grade,  
+				<% school.group_centers.each do |gc| %>Group Center Location: <%= gc.section %>
+				<% end %>
 			
-			<li><h4>Bus Info:</h4> <% school.buses.each do |bus|%><%= bus.company %> <%= bus.bus_number %>, 
-			<% end %></li>
+				<h5>Bus Info:</h5> <% school.buses.each do |bus|%><%= bus.company %> <%= bus.bus_number %>, <span class="sub_label">Location:</span> <%= bus.bus_location.bus_location %> <span>Status:</span> <%= bus.bus_location.status %>
+				<% end %>
+			</li>
 		<% end %>
 	</ul>
 </div>
