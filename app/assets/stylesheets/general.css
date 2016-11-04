@@ -1,0 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+	background-color: #bacfde;
+}
+
+#top_bar {
+	background-color: #8dafc8;
+	height: 50px;
+	max-width: 940px;
+	border-bottom: 2px solid #ffffff;
+	padding: 0;
+}
+
+#tracker_body {
+	max-width: 940px;
+	margin: auto;
+	background-color: #8dafc8;
+}
+
+#main_text_area {
+	padding: 20px;
+}
