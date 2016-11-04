@@ -1,1 +1,21 @@
-general.css
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+	background-color: #bacfde;
+}
+
+#tracker_body {
+	max-width: 940px;
+	margin: auto;
+}
+#top_bar {
+	background-color: #8dafc8;
+	border-bottom: 2px, solid, #ffffff;
+	height: 50px;
+	max-width: 940px;
+}
